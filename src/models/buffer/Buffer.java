@@ -17,6 +17,8 @@ public class Buffer {
 
     public int getFull() { return full; }
 
+    public String[] getData() { return data; }
+
     public boolean push(String data) {
         if (full == this.data.length) {
             return false; // Buffer is full of elements.
